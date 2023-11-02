@@ -1,0 +1,23 @@
+.footer {
+    background-color: #333; // Background color for the footer
+    color: white; // Text color for the footer
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-section {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+

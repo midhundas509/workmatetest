@@ -1,0 +1,118 @@
+.btn-primary {
+    margin-top: 20px;
+    background-color: #007bff; /* Change the background color to blue */
+    color: #fff; /* Change the text color to white */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    border: none; /* Remove the button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+  
+    &:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+  }
+  
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+    padding-right: 30px;
+  
+    h2.status {
+      font-size: 45px; /* Increase the text size for h2 elements */
+    }
+  }
+  
+  .photos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 500px; /* Increase the width of the photo container */
+  
+    .photo-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  
+      .photo {
+        img {
+          max-width: 150%;
+          height: auto;
+          max-height: 120px; /* Increase the maximum height of the photos */
+        }
+      }
+    }
+  
+    
+    @keyframes photoAnimation {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+  
+    .photo-row:nth-child(2) .photo img {
+      animation: photoAnimation 2s ease infinite alternate;
+    }
+  
+    .photo-row:nth-child(4) .photo img {
+      animation: photoAnimation 2s ease infinite alternate;
+    }
+  }
+
+  
+
+  
+
+
+//   @keyframes headingAnimation {
+//     0% {
+//       opacity: 0; /* Start with zero opacity */
+//     }
+//     50% {
+//       opacity: 1; /* Fade in to full opacity at 50% */
+//     }
+//     100% {
+//       opacity: 0; /* Fade out to zero opacity at 100% */
+//     }
+//   }
+  
+//   .status {
+//     font-size: 55px;
+//     animation: headingAnimation 2s ease infinite;
+//   }
+
+  @keyframes headingAnimation {
+    0% {
+      transform: perspective(1000px) rotateX(0deg) translateZ(0);
+    }
+    50% {
+      transform: perspective(1000px) rotateX(180deg) translateZ(30px);
+    }
+    100% {
+      transform: perspective(1000px) rotateX(0deg) translateZ(0);
+    }
+  }
+  
+  .status {
+    font-size: 55px;
+    animation: headingAnimation 4s linear infinite;
+  }
+  
+  
+  
+  
+
+
+  
+  
+  
